@@ -6,16 +6,53 @@ ModelImporter:
     100000: Deur
     100002: Kamers
     100004: //RootNode
+    100006: Bodem
+    100008: Deur1
+    100010: Deur2
+    100012: Key2
+    100014: knop
+    100016: PressurePlate
+    100018: Tafel
+    100020: Deur3
     400000: Deur
     400002: Kamers
     400004: //RootNode
+    400006: Bodem
+    400008: Deur1
+    400010: Deur2
+    400012: Key2
+    400014: knop
+    400016: PressurePlate
+    400018: Tafel
+    400020: Deur3
     2100000: lambert1
     2300000: Deur
     2300002: Kamers
+    2300004: Bodem
+    2300006: Deur1
+    2300008: Deur2
+    2300010: Key2
+    2300012: knop
+    2300014: Tafel
+    2300016: Deur3
     3300000: Deur
     3300002: Kamers
+    3300004: Bodem
+    3300006: Deur1
+    3300008: Deur2
+    3300010: Key2
+    3300012: knop
+    3300014: Tafel
+    3300016: Deur3
     4300000: Deur
     4300002: Kamers
+    4300004: Deur2
+    4300006: Deur1
+    4300008: Key2
+    4300010: Tafel
+    4300012: Bodem
+    4300014: knop
+    4300016: Deur3
   externalObjects: {}
   materials:
     importMaterials: 1
