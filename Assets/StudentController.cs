@@ -6,29 +6,42 @@ using UnityEngine.AI;
 public class StudentController : MonoBehaviour
 {
     public Vector3[] wayPoints;
-    private int wayPointIndex = 0;
 
-    private NavMeshAgent agent;
+    public NavMeshAgent agent;
 
-    bool movingToStart = false;
+    private IStudentState currentState;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        setState(new WanderState(this));
     }
 
     // Update is called once per frame
     void Update()
     {
-        agent.destination = wayPoints[wayPointIndex];
-        if(wayPoints[wayPointIndex].x == transform.position.x && wayPoints[wayPointIndex].z == transform.position.z)
+        if(currentState != null)
         {
-            ++wayPointIndex;
-            if(wayPointIndex == wayPoints.Length)
-            {
-                wayPointIndex = 0;
-            }
+            currentState.onUpdate();
         }
+    }
+
+    private void FixedUpdate()
+    {
+        if(currentState != null)
+        {
+            currentState.onFixedUpdate();
+        }
+    }
+
+    void setState(IStudentState newState)
+    {
+        if(currentState != null)
+        {
+            currentState.onExit();
+        }
+        currentState = newState;
+        currentState.onEntry();
     }
 }
