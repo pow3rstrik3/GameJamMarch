@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.VR
+using UnityEngine.VR;
 
 public class WanderState : IStudentState
 {
@@ -17,13 +17,13 @@ public class WanderState : IStudentState
         float closestWaypointDistance = 0;
         for (int i = 0; i < waypoints.Length; ++i)
         {
-            if(i == 0)
+            if (i == 0)
             {
                 closestWaypointDistance = Vector3.Distance(student.transform.position, waypoints[i]);
             }
             else
             {
-                if(Vector3.Distance(student.transform.position, waypoints[i]) < closestWaypointDistance)
+                if (Vector3.Distance(student.transform.position, waypoints[i]) < closestWaypointDistance)
                 {
                     closestWaypointDistance = Vector3.Distance(student.transform.position, waypoints[i]);
                     wayPointIndex = i;

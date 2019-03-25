@@ -52,7 +52,6 @@ public class StudentController : MonoBehaviour
     //Checks if target is in view of the Student
     public bool isInFieldOfView(Vector3 target)
     {
-        Debug.Log("Angle to center: " + Vector3.Angle(target - transform.position, transform.forward));
         //Check if within view angle
         if (Vector3.Angle(target - transform.position, transform.forward) <= viewAngle)
         {
