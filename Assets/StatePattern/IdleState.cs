@@ -8,7 +8,7 @@ public class IdleState : IStudentState
 
     public override void onEntry()
     {
-        student.setState(new TalkingState(student));
+        student.GetComponent<Animator>().SetTrigger("IsIdle");
     }
 
     public override void onExit()

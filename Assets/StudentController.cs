@@ -73,4 +73,10 @@ public class StudentController : MonoBehaviour
         }
         return false;
     }
+
+    public void talkToStudent()
+    {
+        if (!wanderingPLayer)
+            setState(new TalkingState(this));
+    }
 }
