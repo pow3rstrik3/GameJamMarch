@@ -17,9 +17,12 @@ public class StudentController : MonoBehaviour
     public float maxViewDistance;
     public float caughtPlayerDistance;
 
+    public Vector3 walkAwayPoint;
+
     public AudioClip askForAnswersLine;
     public AudioClip thankYouLine;
     public AudioClip answerJeffLine;
+    public AudioClip giveBookLine;
 
     // Start is called before the first frame update
     void Start()
@@ -78,5 +81,11 @@ public class StudentController : MonoBehaviour
     {
         if (!wanderingPLayer)
             setState(new TalkingState(this));
+    }
+
+    public void giveBookToStudent()
+    {
+        if (!wanderingPLayer)
+            setState(new WalkAwayState(this));
     }
 }
