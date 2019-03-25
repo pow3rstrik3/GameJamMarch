@@ -174,7 +174,157 @@ ModelImporter:
     13700008: Hair
     13700010: Shoes
     13700012: Tops
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bodymat
+    second: {fileID: 2100000, guid: 635e6f8f1b72c1044bd869058126a9ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottommat
+    second: {fileID: 2100000, guid: a7287b62c059a74458a6fbfaf3607415, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hairmat
+    second: {fileID: 2100000, guid: ecfd42109708b3344a0aa37fce35ae39, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shoesmat
+    second: {fileID: 2100000, guid: b878da70ec867c344abcb54b22bb873c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Topmat
+    second: {fileID: 2100000, guid: 60395b5e4d98e3940aaafb891ff48d96, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Body_Diffuse
+    second: {fileID: 2800000, guid: a8f0e9a9d61de594e8da7deb0dc5dbc5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Body_Gloss
+    second: {fileID: 2800000, guid: ea7e9b80903046749934cdc0305746f5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Body_Normal
+    second: {fileID: 2800000, guid: 6fb98118d0fddb042ad8763fe228f8c4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Body_Opacity
+    second: {fileID: 2800000, guid: f6b756e4bad5dd7498649e2728dbe30c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Body_Specular
+    second: {fileID: 2800000, guid: e86cd398b9199fc4fbd62dbb3b6194d1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Bottom_Diffuse
+    second: {fileID: 2800000, guid: c673b9716c4d3034890a0a88dbcb1b4e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Bottom_Gloss
+    second: {fileID: 2800000, guid: 8d1d13216fcb1264fb077a6006d9d4fc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Bottom_Normal
+    second: {fileID: 2800000, guid: df46c880b34a6b94089d82a31e6eb81c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Bottom_Opacity
+    second: {fileID: 2800000, guid: 3881b9d0f320b0440affbecc3049e887, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Bottom_Specular
+    second: {fileID: 2800000, guid: 40a3f75809356384ab09a8d8b32a99ca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Hair_Diffuse
+    second: {fileID: 2800000, guid: 2f9b134ab8fbc3243b6766a635ecd00f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Hair_Gloss
+    second: {fileID: 2800000, guid: 57ebdb1806020a044940711dddf95f54, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Hair_Normal
+    second: {fileID: 2800000, guid: 749a4450510637e4dbe4295850bf33a3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Hair_Opacity
+    second: {fileID: 2800000, guid: 6de9b4c1d98cb4046a14ea18264d60b0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Hair_Specular
+    second: {fileID: 2800000, guid: 01f1395b16a1c0643ae12cfcf2ff4341, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Shoes_Diffuse
+    second: {fileID: 2800000, guid: e77c1a03f93576b499ff8b52a9d36bd9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Shoes_Gloss
+    second: {fileID: 2800000, guid: 9400674037f6d07498458208845c67ec, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Shoes_Normal
+    second: {fileID: 2800000, guid: 1e1c30d122ba56f47a3546a4f5391631, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Shoes_Opacity
+    second: {fileID: 2800000, guid: a12e5db59443efe4b9113592205a4d5e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Shoes_Specular
+    second: {fileID: 2800000, guid: a2f4c47be45a90e4a85d1501dc7f3f71, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Top_Diffuse
+    second: {fileID: 2800000, guid: 8b16440a70970364c8de10ffabd82f87, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Top_Gloss
+    second: {fileID: 2800000, guid: 97c0005ff0db3a94ab9099be56f34a04, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Top_Normal
+    second: {fileID: 2800000, guid: af7c63bca52590348bf577a4ebee3306, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Top_Opacity
+    second: {fileID: 2800000, guid: 089e732aa4bf7a849b1ec8fb6f5a8edd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Jasper_Top_Specular
+    second: {fileID: 2800000, guid: 06c55626082387844baecbc4802490a1, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
