@@ -11,15 +11,28 @@ public class StudentController : MonoBehaviour
 
     private IStudentState currentState;
 
+    public bool wanderingPLayer = true;
+
     public int viewAngle;
     public float maxViewDistance;
     public float caughtPlayerDistance;
+
+    public AudioClip askForAnswersLine;
+    public AudioClip thankYouLine;
+    public AudioClip answerJeffLine;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        setState(new WanderState(this));
+        if (wanderingPLayer)
+        {
+            setState(new WanderState(this));
+        }
+        else
+        {
+            setState(new IdleState(this));
+        }
     }
 
     // Update is called once per frame
