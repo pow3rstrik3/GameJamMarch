@@ -1,5 +1,5 @@
 {
-   "app_key" : "application.generated.unity.introductiontohtcvivefinal.exe",
+   "app_key" : "application.generated.unity.steamvr.exe",
    "bindings" : {
       "/actions/buggy" : {
          "sources" : [
@@ -119,7 +119,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grab"
+                     "output" : "/actions/default/in/grabgrip"
                   }
                },
                "mode" : "button",
@@ -178,7 +178,7 @@
             {
                "inputs" : {
                   "click" : {
-                     "output" : "/actions/default/in/grab"
+                     "output" : "/actions/default/in/grabgrip"
                   }
                },
                "mode" : "button",
@@ -191,8 +191,8 @@
             },
             {
                "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/grab"
+                  "pull" : {
+                     "output" : "/actions/default/in/squeeze"
                   }
                },
                "mode" : "trigger",
@@ -200,32 +200,12 @@
             },
             {
                "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/grab"
+                  "pull" : {
+                     "output" : "/actions/default/in/squeeze"
                   }
                },
                "mode" : "trigger",
                "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {},
-               "mode" : "none",
-               "path" : "/user/hand/left/input/skeleton/left"
-            },
-            {
-               "inputs" : {},
-               "mode" : "none",
-               "path" : "/user/hand/right/input/skeleton/left"
-            },
-            {
-               "inputs" : {},
-               "mode" : "button",
-               "path" : "/user/hand/left/input/application_menu"
-            },
-            {
-               "inputs" : {},
-               "mode" : "button",
-               "path" : "/user/hand/right/input/application_menu"
             }
          ]
       },

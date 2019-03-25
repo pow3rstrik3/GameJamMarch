@@ -11,15 +11,28 @@ public class StudentController : MonoBehaviour
 
     private IStudentState currentState;
 
+    public bool wanderingPLayer = true;
+
     public int viewAngle;
     public float maxViewDistance;
     public float caughtPlayerDistance;
+
+    public AudioClip askForAnswersLine;
+    public AudioClip thankYouLine;
+    public AudioClip answerJeffLine;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        setState(new WanderState(this));
+        if (wanderingPLayer)
+        {
+            setState(new WanderState(this));
+        }
+        else
+        {
+            setState(new IdleState(this));
+        }
     }
 
     // Update is called once per frame
@@ -59,5 +72,11 @@ public class StudentController : MonoBehaviour
             return Vector3.Distance(target, transform.position) <= maxViewDistance;
         }
         return false;
+    }
+
+    public void talkToStudent()
+    {
+        if (!wanderingPLayer)
+            setState(new TalkingState(this));
     }
 }

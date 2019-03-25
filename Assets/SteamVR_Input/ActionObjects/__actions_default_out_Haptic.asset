@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   changeTolerance: 0.000001
   fullPath: /actions/default/out/Haptic
-  actionSet: {fileID: 11400000, guid: 6c78a60dfb5a8204fa16f8e46f5b85bf, type: 2}
+  actionSet: {fileID: 11400000, guid: d181189f6f4c49145a0c7d844f6e4ee1, type: 2}
   direction: 1

@@ -51,7 +51,7 @@ SkinnedMeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
+  m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 83d971dc1e971294db95113fe0ecbdd4, type: 2}
@@ -230,5 +230,5 @@ MonoBehaviour:
   interactable: {fileID: 0}
   renderer: {fileID: 0}
   affectMaterial: 1
-  gripSqueeze: {fileID: 0}
-  pinchSqueeze: {fileID: 0}
+  gripSqueeze: {fileID: 11400000, guid: fa109c804745a444781faf41abad5224, type: 2}
+  pinchSqueeze: {fileID: 11400000, guid: fa109c804745a444781faf41abad5224, type: 2}
