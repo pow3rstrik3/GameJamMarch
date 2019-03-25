@@ -11,6 +11,10 @@ public class StudentController : MonoBehaviour
 
     private IStudentState currentState;
 
+    public int viewAngle;
+    public float maxViewDistance;
+    public float caughtPlayerDistance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +39,7 @@ public class StudentController : MonoBehaviour
         }
     }
 
-    void setState(IStudentState newState)
+    public void setState(IStudentState newState)
     {
         if(currentState != null)
         {
@@ -43,5 +47,18 @@ public class StudentController : MonoBehaviour
         }
         currentState = newState;
         currentState.onEntry();
+    }
+
+    //Checks if target is in view of the Student
+    public bool isInFieldOfView(Vector3 target)
+    {
+        Debug.Log("Angle to center: " + Vector3.Angle(target - transform.position, transform.forward));
+        //Check if within view angle
+        if (Vector3.Angle(target - transform.position, transform.forward) <= viewAngle)
+        {
+            //Check if within view range
+            return Vector3.Distance(target, transform.position) <= maxViewDistance;
+        }
+        return false;
     }
 }
