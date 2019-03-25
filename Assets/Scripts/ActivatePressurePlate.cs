@@ -9,23 +9,19 @@ public class ActivatePressurePlate : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        gameObject.SetActive(true);   
+        gameObject.SetActive(false);   
     }
 
     private void OnTriggerEnter(Collider other)
     {
-//        if (other.CompareTag("Player"))
-//        {
-            transform.position = new Vector3( transform.position.x ,transform.position.y - 0.05f, transform.position.z);
-//        }
+        transform.position = new Vector3( transform.position.x ,transform.position.y - 0.05f, transform.position.z);
+        EventManager.TriggerEvent("PressurePadPressed");
     }
 
     private void OnTriggerExit(Collider other)
     {
-//        if (other.CompareTag("Player"))
-//        {
-            transform.position = new Vector3(transform.position.x, transform.position.y + 0.05f, transform.position.z);
-//        }
+        transform.position = new Vector3(transform.position.x, transform.position.y + 0.05f, transform.position.z);
+        EventManager.TriggerEvent("PressurePadReleased");
     }
 
     public void ActivatePressurePlateFunction() {
