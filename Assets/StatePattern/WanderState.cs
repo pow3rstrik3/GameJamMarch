@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VR
 
 public class WanderState : IStudentState
 {
@@ -12,6 +13,7 @@ public class WanderState : IStudentState
     public override void onEntry()
     {
         waypoints = student.wayPoints;
+        //Set current way point to closest waypoint
         float closestWaypointDistance = 0;
         for (int i = 0; i < waypoints.Length; ++i)
         {
@@ -40,7 +42,10 @@ public class WanderState : IStudentState
 
     public override void onUpdate()
     {
+        // Move towards waypoint
         student.agent.destination = waypoints[wayPointIndex];
+
+        // Set next waypoint if waypoint is reached
         if (student.wayPoints[wayPointIndex].x == student.transform.position.x && waypoints[wayPointIndex].z == student.transform.position.z)
         {
             ++wayPointIndex;
@@ -48,6 +53,14 @@ public class WanderState : IStudentState
             {
                 wayPointIndex = 0;
             }
+        }
+
+        // Check if player is within field of view
+        Transform player = Camera.main.transform;
+        if (student.isInFieldOfView(player.position))
+        {
+            // Switch to chase state
+            student.setState(new ChasePlayerState(student, player));
         }
     }
 }
